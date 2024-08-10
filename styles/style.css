@@ -22,14 +22,6 @@
   position: absolute;
 }
 
-.header__theme-menu {
-  position: absolute;
-  display: block;
-  text-align: right;
-  padding-block: 14px;
-  line-height: 2;
-}
-
 .header__logo {
   display: flex;
   right: 28px;
@@ -82,32 +74,37 @@
   font-size: 18px;
 }
 
+.header__theme-menu {
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 75px;
+  right: 10px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .header__theme-menu-button {
   background: transparent;
   font-style: normal;
   font-size: 18px;
-  text-align: center;
-  vertical-align:middle;
+  line-height: 18px;
   text-transform: lowercase;
   color: #FF0070;
-  /*border: 0;*/
+  border: 0;
   height: 26px;
   width: 70px;
-}
-
-.header__theme-menu-button_type_dark {
-  background: transparent;
-  font-style: normal;
-  font-size: 18px;
-  text-align: center;
-  text-transform: lowercase;
-  color: #FF0070;
-  border: 1px solid #FF0070;
-  height: 26px;
-  width: 70px;
+  display: flex;
+  justify-content: center;
 }
 
 .header__theme-menu-button_active {
+  color: #FF0070;
+  border: 1px solid #FF0070;
   pointer-events: none;
 }
 
