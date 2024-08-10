@@ -14,15 +14,16 @@
 }
 
 .header {
-  min-inline-size: 360;
-  height: 100vh;
-  display: grid;
-  padding: 92px 50px 90px;
-  min-width: 375px;
-  z-index: 1;
+  height: 668px;
+  display: flex;
+}
+
+.header_content_section {
+  position: absolute;
 }
 
 .header__theme-menu {
+  position: absolute;
   display: block;
   text-align: right;
   padding-block: 14px;
@@ -37,11 +38,12 @@
   color: #FF0070;
   font-size: 18px;
   text-transform: uppercase;
-  position: relative;
+  position: absolute;
   margin-block-end: 20px;
 }
 
-.decorated-zone::before {
+/* точка после REС, нужно расскоментировать и добавить */
+/* .decorated-zone::before {
   position: absolute;
   content: '';
   width: 9px;
@@ -51,7 +53,7 @@
   display: block;
   background-color: #FF0070;
   border-radius: 50%;
-}
+} */
 
 .decorated-zone::before {
   content: '';
@@ -118,7 +120,6 @@
 }
 
 .decorated-zone {
-  display: flex;
   position: relative;
   background-image: url(../images/cover-image-dark.png);
   background-repeat: no-repeat;
@@ -131,7 +132,6 @@
 
 .cover__title {
   width: 100%;
-  min-width: 100px;
   font-weight: 700;
   font-size: 116px;
   line-height: 95.7px;
