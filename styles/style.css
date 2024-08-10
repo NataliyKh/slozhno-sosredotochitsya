@@ -1,5 +1,252 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  margin: 0;
+  color: var(--text-color, #F1B2CE);
+  font-family: var(--main-font, sans-serif);
+  background-color: var(--bg-color, #000028);
+  background-attachment: fixed;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+:root {
+  --brand-color: #FF0070;
+}
+
+.header {
+  min-inline-size: 360;
+  height: 100vh;
+  display: grid;
+  padding: 92px 50px 90px;
+  min-width: 375px;
+  z-index: 1;
+}
+
+.header__theme-menu {
+  display: block;
+  text-align: right;
+  padding-block: 14px;
+  line-height: 2;
+}
+
+.header__logo {
+  display: flex;
+  right: 28px;
+  justify-content: right;
+  min-width: 50px;
+  color: #FF0070;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+  margin-block-end: 20px;
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: '';
+  width: 9px;
+  height: 9px;
+  top: 8px;
+  right: -19px;
+  display: block;
+  background-color: #FF0070;
+  border-radius: 50%;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  border-right: solid 1px #FF0070;
+  border-top: solid 1px #FF0070;
+}
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 25px;
+  height: 25px;
+  border-left: solid 1px #FF0070;
+  border-bottom: solid 1px #FF0070;
+}
+
+.title {
+  background-color: #FF0070;
+  color: #000028;
+  font-size: 18px;
+}
+
+.header__theme-menu-button {
+  background: transparent;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  vertical-align:middle;
+  text-transform: lowercase;
+  color: #FF0070;
+  /*border: 0;*/
+  height: 26px;
+  width: 70px;
+}
+
+.header__theme-menu-button_type_dark {
+  background: transparent;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #FF0070;
+  border: 1px solid #FF0070;
+  height: 26px;
+  width: 70px;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.cover {
+  display: block;
+  position: relative;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.decorated-zone {
+  display: flex;
+  position: relative;
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cover__title {
+  width: 100%;
+  min-width: 100px;
+  font-weight: 700;
+  font-size: 116px;
+  line-height: 95.7px;
+  color: #DB00FF;
+  margin: auto;
+  filter: drop-shadow(5px 5px var(--brand-color));
+  font-size: (7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+
+.content-section {
+  display: flex;
+  box-sizing: border-box;
+  min-width: 355px;
+  min-height: 117px;
+  margin-block-start:10px;
+}
+
+.intro__title {
+  display: flex;
+  font-size: 18px;
+  color: #FF0070;
+  font-weight:700;
+  margin-block-start: 40px;
+}
+
+.content-section__introduction {
+  font-size: 18px;
+  color: #000028;
+  background-color: #FF0070;
+  font-weight:700;
+  margin-block-start: 20px;
+}
+
+.card__text {
+  color: #F1B2CE;
+  font-size: 18px;
+  margin-block-start: 10px;
+}
+
+.color-span {
+  font-size: 18px;
+  color: #000028;
+  background-color: #FF0070;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+}
+
+.container {
+  display: grid;
+  gap: 10px;
+}
+
+.container img {
+  width: 100%;
+}
+
+/* .title_three {
+  display: flex;
+  min-width: 355px;
+  min-height: 23px;
+  background-color: #FF0070;
+  position: relative;
+} */
+
+.footer decorated-zone {
+  min-inline-size: 360;
+  height: 100vh;
+}
+
+.footer__title {
+  margin-block-start: 10%;
+  padding: 2.5%;
+  text-align: center;
+  font-weight: 700;
+  color: #DB00FF;
+  width: 100%;
+  min-width: 100px;
+  font-size: 116px;
+  line-height: 95.7px;
+  margin: auto;
+  font-size: (7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  filter: drop-shadow(5px 5px var(--brand-color));
+}
+
+
+/*.cover__title {
+  width: 100%;
+  min-width: 100px;
+  font-weight: 700;
+  font-size: 116px;
+  line-height: 95.7px;
+  color: #DB00FF;
+  margin: auto;
+  filter: drop-shadow(5px 5px var(--brand-color));
+  margin-bottom: 40px;
+  font-size: (7.25rem, 7.0115rem + 1.0178vw, 7.5rem);*/
+
+.footer__title::before {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 25px;
+  height: 25px;
+  border-right: solid 1px #FF0070;
+  border-top: solid 1px #FF0070;
+}
+.footer__title::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 25px;
+  height: 25px;
+  border-left: solid 1px #FF0070;
+  border-bottom: solid 1px #FF0070;
+}
+
