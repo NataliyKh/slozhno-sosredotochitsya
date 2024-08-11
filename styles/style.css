@@ -4,7 +4,7 @@
   margin: 0;
   color: var(--text-color, #F1B2CE);
   font-family: var(--main-font, sans-serif);
-  background-color: var(--bg-color, #000028);
+  background-image: url(../images/cover-image-dark.png);
   background-attachment: fixed;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
@@ -57,6 +57,7 @@
   border-right: solid 1px #FF0070;
   border-top: solid 1px #FF0070;
 }
+
 .decorated-zone::after {
   content: '';
   position: absolute;
@@ -118,13 +119,8 @@
 
 .decorated-zone {
   position: relative;
-  background-image: url(../images/cover-image-dark.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 10px;
-  flex-direction: column;
-  overflow: hidden;
+  margin: 10px;
+  border: solid 10px red;
 }
 
 .cover__title {
@@ -225,25 +221,3 @@
   filter: drop-shadow(5px 5px var(--brand-color));
   margin-bottom: 40px;
   font-size: (7.25rem, 7.0115rem + 1.0178vw, 7.5rem);*/
-
-.footer__title::before {
-  content: '';
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 25px;
-  height: 25px;
-  border-right: solid 1px #FF0070;
-  border-top: solid 1px #FF0070;
-}
-.footer__title::after {
-  content: '';
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  width: 25px;
-  height: 25px;
-  border-left: solid 1px #FF0070;
-  border-bottom: solid 1px #FF0070;
-}
-
