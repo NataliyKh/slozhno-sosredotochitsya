@@ -157,10 +157,6 @@
   gap: 10px;
 }
 
-.card-four {
-  gap: 0;
-}
-
 /* потому что отдельная сетка для картинок в 4ой секции */
 .card-four .content-section__introduction {
   margin-block-end: 10px;
@@ -274,11 +270,15 @@
     grid-template-columns: 1fr 2fr;
   }
 
+  /* потому что отдельная сетка для картинок в 4ой секции */
+  .card-four .content-section__introduction {
+    margin-block-end: 20px;
+  }
+
   .card__picture {
     grid-column: span 3;
     grid-row: 1;
     gap: 20px;
-    margin-top: 20px;
   }
 
   .card__picture_img:nth-of-type(1) {
