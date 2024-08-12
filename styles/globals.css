@@ -44,3 +44,11 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+@media (width >= 768px) {
+
+  body {
+    gap: 60px;
+  }
+
+}
