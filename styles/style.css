@@ -127,18 +127,15 @@
   background-size: cover;
 }
 
+.main-text {
+  display: grid;
+  gap: 50px;
+  padding: 0px 10px;
+}
+
 .content-section {
   display: grid;
   gap: 20px;
-  padding: 30px 10px 10px;
-}
-
-.card-two, .card-three {
-  margin-block-start: 10px;
-}
-
-.card-three {
-  margin-block-end: 10px;
 }
 
 .intro__title {
@@ -148,11 +145,11 @@
   line-height: 1.3em;
 }
 
-/*.article {
+.article {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}*/
+}
 
 .title_two {
   display: flex;
@@ -161,8 +158,6 @@
 }
 
 .card-four {
-  padding-block-start: 30px;
-  padding-block-end: 40px;
   gap: 0;
 }
 
@@ -175,8 +170,6 @@
   line-height: 1.3em;
   background-color: var(--accent-color);
   color: var(--block-title-color);
-  margin-block-start: 10px;
-  margin-block-end: 10px;
 
 }
 
@@ -192,10 +185,6 @@
   font-size: 18px;
   color: var(--text-color);
   line-height: 1.3em;
-}
-
-.main-text {
-  margin-block-start: 10px;
 }
 
 .card__title {
