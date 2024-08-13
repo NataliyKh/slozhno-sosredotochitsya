@@ -41,4 +41,8 @@
     --bg-image: url(../images/cover-image-light.png);
     --bg-color: #ffeef6;
   }
+
+  .header__decor-item {
+    display: none;
+  }
 }
