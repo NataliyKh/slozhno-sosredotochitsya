@@ -227,7 +227,7 @@
   height: 100vh;
   min-height: 668px;
   position: relative;
-  padding: 0 10px 10px;
+  padding: 10px 10px;
 }
 
 .footer__title {
@@ -307,8 +307,7 @@
   }
 
   .footer {
-    padding: 0 20px 20px;
-    margin-top: 65px;
+    padding: 20px 20px;
   }
 
   .decorated-zone::before {
@@ -330,6 +329,7 @@
     font-size: var(--font-size-desktop);
     margin-top: 20px;
   }
+
 }
 
 @media (width >= 1024px) {
@@ -364,7 +364,4 @@
     grid-template-rows: 260px 315px 428px;
   }
 
-  .footer {
-    margin-top: 70px;
-  }
 }
