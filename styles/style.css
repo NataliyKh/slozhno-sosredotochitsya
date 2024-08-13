@@ -158,7 +158,7 @@
 }
 
 /* потому что отдельная сетка для картинок в 4ой секции */
-.card-four .content-section__introduction {
+.card-pictures .content-section__introduction {
   margin-block-end: 10px;
 }
 
@@ -271,7 +271,7 @@
   }
 
   /* потому что отдельная сетка для картинок в 4ой секции */
-  .card-four .content-section__introduction {
+  .card-pictures .content-section__introduction {
     margin-block-end: 20px;
   }
 
