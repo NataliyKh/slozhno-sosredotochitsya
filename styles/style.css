@@ -79,6 +79,7 @@
 
 .header__theme-menu-button {
   background: transparent;
+  font-family: var(--font-family);
   font-style: normal;
   font-size: 18px;
   text-transform: lowercase;
