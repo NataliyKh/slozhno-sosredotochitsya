@@ -265,8 +265,8 @@
     max-width: 236px;
   }
 
-  .card-one,
-  .card-three {
+  .card-why,
+  .card-how {
     grid-template-columns: 1fr 2fr;
   }
 
@@ -356,22 +356,22 @@
     --title-text-shadow: #ff0070;
   }
 
-  .card-two {
+  .card-what {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
   }
 
-  .card-two .paragraph1 {
+  .card-what .paragraph1 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
 
-  .card-two .paragraph2 {
+  .card-what .paragraph2 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
 
-  .card-two .paragraph3 {
+  .card-what .paragraph3 {
     grid-column: 3/4;
     grid-row: 2/3;
   }
