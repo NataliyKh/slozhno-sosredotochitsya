@@ -333,6 +333,10 @@
 }
 
 @media (width >= 1024px) {
+
+  .header {
+    height: 768px;
+  }
   
   .header__theme-menu {
     justify-self: center;
@@ -352,10 +356,26 @@
     --title-text-shadow: #ff0070;
   }
 
-  .card__two {
+  .card-two {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
   }
 
+  .card-two .paragraph1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .card-two .paragraph2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .card-two .paragraph3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  
   .intro__title {
     max-width: 315px;
   }
