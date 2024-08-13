@@ -140,11 +140,15 @@
   gap: 20px;
 }
 
-.intro__title {
+.title__text {
   font-size: 18px;
-  color: var(--main-color);
-  font-weight:bold;
   line-height: 1.3em;
+  font-weight: normal;
+}
+
+.intro__title {
+  color: var(--main-color);
+  font-weight: bold;
 }
 
 .article {
@@ -164,35 +168,26 @@
   margin-block-end: 10px;
 }
 
+.card-how .content-section__introduction {
+  margin-block-end: 10px;
+}
+
 .content-section__introduction {
   font-size: 18px;
   line-height: 1.3em;
   background-color: var(--accent-color);
   color: var(--block-title-color);
-
-}
-
-.content-section__block {
-  background-color: var(--accent-color);
-  color: var(--block-title-color);
-  font-size: 18px;
-  line-height: 1.3em;
-  margin-block-end: 10px;
 }
 
 .card__text {
-  font-size: 18px;
   color: var(--text-color);
-  line-height: 1.3em;
 }
 
 .card__title {
   color: var(--block-title-color);
   background-color: var(--accent-color);
-  font-size: 18px;
-  line-height: 1.3em;
-  font-weight: normal;
 }
+
 .link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
