@@ -354,17 +354,17 @@
     grid-template-rows: auto auto;
   }
 
-  .card-what .paragraph1 {
+  .card-what .paragraph_multitasking {
     grid-column: 1/2;
     grid-row: 2/3;
   }
 
-  .card-what .paragraph2 {
+  .card-what .paragraph_food {
     grid-column: 2/3;
     grid-row: 2/3;
   }
 
-  .card-what .paragraph3 {
+  .card-what .paragraph_gadgets {
     grid-column: 3/4;
     grid-row: 2/3;
   }
