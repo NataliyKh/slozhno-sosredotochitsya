@@ -93,6 +93,8 @@
   width: 70px;
   border: none;
   cursor: pointer;
+  margin: auto;
+  line-height: 1.125rem;
 }
 
 .header__theme-menu-button:hover {
