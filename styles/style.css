@@ -10,6 +10,12 @@
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
+.text {
+  font-size: 18px;
+  line-height: 1.3em;
+  font-weight: normal;
+}
+
 .header {
   display: grid;
   grid-template-rows: 1fr auto 1fr;
@@ -81,7 +87,6 @@
   background: transparent;
   font-family: var(--font-family);
   font-style: normal;
-  font-size: 18px;
   text-transform: lowercase;
   color: var(--main-color);
   height: 26px;
@@ -114,8 +119,6 @@
 }
 
 .title-decor {
-  font-size: 18px;
-  line-height: 1.3em;
   background-color: var(--accent-color);
   color: var(--block-title-color);
   font-weight: bold;
@@ -138,12 +141,6 @@
 .content-section {
   display: grid;
   gap: 20px;
-}
-
-.text {
-  font-size: 18px;
-  line-height: 1.3em;
-  font-weight: normal;
 }
 
 .intro__title {
@@ -169,8 +166,6 @@
 }
 
 .content-section__introduction {
-  font-size: 18px;
-  line-height: 1.3em;
   background-color: var(--accent-color);
   color: var(--block-title-color);
 }
