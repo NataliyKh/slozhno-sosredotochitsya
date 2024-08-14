@@ -316,11 +316,6 @@
     right: 30px;
   }
 
-  .footer-title {
-    font-size: var(--font-size-desktop);
-    margin-top: 20px;
-  }
-
 }
 
 @media (width >= 1024px) {
@@ -343,7 +338,7 @@
   }
 
   .cover__title,
-  .footer-title {
+  .footer__title {
     --title-text-shadow: #ff0070;
   }
 
