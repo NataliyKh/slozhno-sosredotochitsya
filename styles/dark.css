@@ -17,6 +17,7 @@
   --bg-image: url(../images/cover-image-dark.png);
   --title-color: #db00ff;
   --block-title-color: #000028;
+  --hover-border-color: #FF007066; /* Рамка с прозрачностью 0.4 для hover эффекта */
 }
 
 .theme_dark .header__decor-item {

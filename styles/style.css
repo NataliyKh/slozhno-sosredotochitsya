@@ -95,13 +95,22 @@
   cursor: pointer;
 }
 
-.header__theme-menu-button_active {
-  border: 1px solid var(--main-color);
-  pointer-events: none;
+.header__theme-menu-button:hover {
+  border: 1px solid var(--hover-border-color);
 }
 
 .header__theme-menu-button:focus {
   outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--main-color);
+  outline: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--main-color);
+  pointer-events: none;
 }
 
 .cover__title {

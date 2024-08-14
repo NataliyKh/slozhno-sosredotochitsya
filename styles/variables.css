@@ -12,6 +12,7 @@
   --title-color: #db00ff;
   --block-title-color: #000028;
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --hover-border-color: #FF007066; /* Рамка с прозрачностью 0.4 для hover эффекта */
 }
 
 @media (width >= 768px) {

@@ -18,6 +18,7 @@
   --block-title-color: #353430;
   --decor-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
+  --hover-border-color: #32312D66; /* Рамка с прозрачностью 0.4 для hover эффекта */
 }
 
 .page.theme_light .header__decor-item {
@@ -40,6 +41,7 @@
     --block-title-color: #353430;
     --bg-image: url(../images/cover-image-light.png);
     --bg-color: #ffeef6;
+    --hover-border-color: #32312D66; /* Рамка с прозрачностью 0.4 для hover эффекта */
   }
 
   .header__decor-item {
